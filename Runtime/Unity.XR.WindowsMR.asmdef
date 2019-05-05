@@ -1,6 +1,8 @@
 {
     "name": "Unity.XR.WindowsMR",
-    "references": [],
+    "references": [
+    	"Unity.ugui"
+    ],
     "optionalUnityReferences": [],
   "includePlatforms": [
     "Editor",
