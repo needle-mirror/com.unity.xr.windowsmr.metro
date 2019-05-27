@@ -4,6 +4,10 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [3.0.1] - 2019-05-28
+
+Update dependencies for arm64 version of AudioPluginMsHRTF.dll so that it is compatible with Hololens 2.
+
 ## [3.0.0] - 2019-05-06
 
 Include reference in the asmdef file to include ugui so that HoloLens input will correctly compile and work.

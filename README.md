@@ -10,7 +10,7 @@ https://docs.google.com/document/d/1Q55yWtm3IgYim5OLfFW6Vd3McU8mEIXlSjOb7i5MuOk/
 
 ```
 <root>
-	com.unity.windowsmr.metro
+	com.unity.xr.windowsmr.metro
 		README
 		Licenses
 		CHANGELOG
