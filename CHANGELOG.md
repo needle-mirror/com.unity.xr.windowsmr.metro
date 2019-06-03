@@ -4,6 +4,14 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.12] - 2019-06-04
+
+Remoting functionality is now compatible with HoloLens 2 devices using recent enough versions of Unity. Minimum compatible versions:
+- 2019.3.0a6
+- 2019.2.0b5
+- 2019.1.6
+- 2018.4.2
+
 ## [1.0.11] - 2019-05-30
 
 Remove Documentation.meta file
