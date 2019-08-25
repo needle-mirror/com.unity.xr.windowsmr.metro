@@ -4,6 +4,15 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [3.0.5] - 2019-08-26
+
+Update remoting dlls for Hololens 2
+-- Fixes crash when remoting with shared depth buffer enabled
+
+## [3.0.4] - 2019-08-9
+
+Add updated remoting dll for Hololens 2 (new name same functionality)
+
 ## [3.0.3] - 2019-07-24
 
 Fix .meta file issues for x64 remoting plugins
