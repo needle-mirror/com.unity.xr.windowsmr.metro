@@ -4,6 +4,16 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.14] - 2019-08-26
+
+Update Remoting dlls to allow for Hololens 2 remoting
+
+## [1.0.13] - 2019-07-24
+
+Fix .meta file issues for x64 remoting plugins
+Move remoting plugins into x86_64 folder
+Add Hololens 2 Remoting dll
+
 ## [1.0.12] - 2019-06-04
 
 Remoting functionality is now compatible with HoloLens 2 devices using recent enough versions of Unity. Minimum compatible versions:
