@@ -8,7 +8,12 @@ public class HolographicRemotingPluginRegistration : IPreprocessBuildWithReport
 
     private readonly string[] nativePluginNames = new string[]
     {
-        "HolographicStreamer.dll", "Microsoft.Perception.Simulation.dll", "PerceptionRemotingPlugin.dll"
+        "HolographicStreamer.dll",
+        "Microsoft.Perception.Simulation.dll",
+        "PerceptionRemotingPlugin.dll",
+        "Microsoft.Holographic.AppRemoting.dll",
+        "PerceptionDevice.dll",
+        "UnityRemotingWMR.dll"
     };
 
     public void OnPreprocessBuild(BuildReport report)

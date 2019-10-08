@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 52ab2162c3f172f4882f786ea5f67b00
+guid: 5833bd34984d00540a2e0eecfd2c6f99
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -18,22 +18,11 @@ PluginImporter:
       settings:
         Exclude Android: 1
         Exclude Editor: 0
-        Exclude Linux: 1
         Exclude Linux64: 1
-        Exclude LinuxUniversal: 1
-        Exclude OSXIntel: 1
-        Exclude OSXIntel64: 1
         Exclude OSXUniversal: 1
         Exclude Win: 1
         Exclude Win64: 1
-        Exclude iOS: 1
-  - first:
-      '': Editor
-    second:
-      enabled: 0
-      settings:
-        CPU: x86_64
-        OS: Windows
+        Exclude WindowsStoreApps: 1
   - first:
       Android: Android
     second:
@@ -52,6 +41,7 @@ PluginImporter:
       settings:
         CPU: x86_64
         DefaultValueInitialized: true
+        OS: AnyOS
   - first:
       Facebook: Win
     second:
@@ -61,35 +51,11 @@ PluginImporter:
   - first:
       Facebook: Win64
     second:
-      enabled: 0
+      enabled: 1
       settings:
         CPU: AnyCPU
-  - first:
-      Standalone: Linux
-    second:
-      enabled: 0
-      settings:
-        CPU: None
   - first:
       Standalone: Linux64
-    second:
-      enabled: 0
-      settings:
-        CPU: AnyCPU
-  - first:
-      Standalone: LinuxUniversal
-    second:
-      enabled: 0
-      settings:
-        CPU: AnyCPU
-  - first:
-      Standalone: OSXIntel
-    second:
-      enabled: 0
-      settings:
-        CPU: None
-  - first:
-      Standalone: OSXIntel64
     second:
       enabled: 0
       settings:
@@ -99,7 +65,7 @@ PluginImporter:
     second:
       enabled: 0
       settings:
-        CPU: AnyCPU
+        CPU: x86_64
   - first:
       Standalone: Win
     second:
@@ -113,12 +79,15 @@ PluginImporter:
       settings:
         CPU: AnyCPU
   - first:
-      iPhone: iOS
+      Windows Store Apps: WindowsStoreApps
     second:
       enabled: 0
       settings:
-        CompileFlags: 
-        FrameworkDependencies: 
+        CPU: X64
+        DontProcess: false
+        PlaceholderPath: 
+        SDK: AnySDK
+        ScriptingBackend: AnyScriptingBackend
   userData: 
   assetBundleName: 
   assetBundleVariant: 
