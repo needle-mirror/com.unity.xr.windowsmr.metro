@@ -4,6 +4,10 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.15] - 2019-10-25
+
+Update Hololens 2 remoting dlls to support standalone remoting
+
 ## [1.0.14] - 2019-08-26
 
 Update Remoting dlls to allow for Hololens 2 remoting
