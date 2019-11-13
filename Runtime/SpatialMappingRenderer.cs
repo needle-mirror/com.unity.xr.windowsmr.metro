@@ -10,14 +10,17 @@ using UnityEditor;
 namespace UnityEngine.XR.WSA
 {
     [MovedFrom("UnityEngine.VR.WSA")]
-    [AddComponentMenu("XR/Spatial Mapping Renderer", 12)]
+    [AddComponentMenu("XR/Spatial Mapping Renderer (Deprecated)", 12)]
+    [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
     public class SpatialMappingRenderer : SpatialMappingBase
     {
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public enum RenderState { None = 0, Occlusion = 1, Visualization = 2 }
 
         [SerializeField]
         private RenderState m_CurrentRenderState = RenderState.Occlusion;
 
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public RenderState renderState
         {
             get
@@ -41,6 +44,7 @@ namespace UnityEngine.XR.WSA
         [SerializeField]
         private Material m_VisualMaterial;
 
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public Material visualMaterial
         {
             get
@@ -57,6 +61,7 @@ namespace UnityEngine.XR.WSA
         [SerializeField]
         private Material m_OcclusionMaterial;
 
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public Material occlusionMaterial
         {
             get

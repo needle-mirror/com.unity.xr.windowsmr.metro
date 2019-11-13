@@ -6,9 +6,10 @@ using UnityEngine.Scripting.APIUpdating;
 namespace UnityEngine.XR.WSA
 {
     [MovedFrom("UnityEngine.VR.WSA")]
+    [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
     public class SpatialMappingBaseInspector : Editor
     {
-        private static readonly GUIContent s_GeneralSettingsLabelContent = new GUIContent("General Settings");
+        private static readonly GUIContent s_GeneralSettingsLabelContent = new GUIContent("General Settings (Deprecated)");
         private static readonly GUIContent s_SurfaceParentLabelContent = new GUIContent("Surface Parent", "All surface mesh GameObjects will be children of the surface parent.  If no surface parent has been assigned, a surface parent will be generated.");
         private static readonly GUIContent s_FreezeUpdatesLabelContent = new GUIContent("Freeze Updates");
         private static readonly GUIContent s_TimeBetweenUpdatesLabelContent = new GUIContent("Time Between Updates", "Time, in seconds, to wait between spatial mapping updates.");

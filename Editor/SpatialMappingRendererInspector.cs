@@ -8,12 +8,13 @@ namespace UnityEngine.XR.WSA
     [MovedFrom("UnityEngine.VR.WSA")]
     [CanEditMultipleObjects]
     [CustomEditor(typeof(SpatialMappingRenderer))]
+    [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
     public class SpatialMappingRendererInspector : SpatialMappingBaseInspector
     {
         static readonly string s_VariableOcclusionMaterial = "m_OcclusionMaterial";
         static readonly string s_VariableVisualMaterial = "m_VisualMaterial";
 
-        private static readonly GUIContent s_RenderSettingsLabelContent = new GUIContent("Render Settings");
+        private static readonly GUIContent s_RenderSettingsLabelContent = new GUIContent("Render Settings (Deprecated)");
         private static readonly GUIContent s_RenderStateLabelContent = new GUIContent("Render State", "This field specifies the material that should be applied to all surfaces.");
         private static readonly GUIContent s_OcclusionMaterialLabelContent = new GUIContent("Occlusion Material", "The occlusion material is intended to occlude holograms that should be hidden from the user.");
         private static readonly GUIContent s_CustomMaterialLabelContent = new GUIContent("Visual Material", "The visual material is intended to be used for the purpose of visualizing the surfaces.");

@@ -10,6 +10,7 @@ namespace UnityEngine.XR.WSA
     [MovedFrom("UnityEngine.VR.WSA")]
     [CanEditMultipleObjects]
     [CustomEditor(typeof(SpatialMappingCollider))]
+    [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
     public class SpatialMappingColliderInspector : SpatialMappingBaseInspector
     {
         private static readonly GUIContent s_ColliderSettingsLabelContent = new GUIContent("Collider Settings");

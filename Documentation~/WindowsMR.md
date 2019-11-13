@@ -1,5 +1,7 @@
 # About WindowsMR
 
+**NOTE: Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System.**
+
 The WindowsMR package enables support for building applications for WindowsMR supported devices. The package is supported through the native virtual reality support in Unity.
 More information about native virtual reality support in Unity can be found at: https://docs.unity3d.com/Manual/XR.html
 

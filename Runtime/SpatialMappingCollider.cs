@@ -7,13 +7,15 @@ using UnityEngine.Scripting.APIUpdating;
 namespace UnityEngine.XR.WSA
 {
     [MovedFrom("UnityEngine.VR.WSA")]
-    [AddComponentMenu("XR/Spatial Mapping Collider", 12)]
+    [AddComponentMenu("XR/Spatial Mapping Collider (Deprecated)", 12)]
+    [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
     public class SpatialMappingCollider : SpatialMappingBase
     {
         // Set the mesh layer to the default layer, which is 1, by default.
         [SerializeField]
         private int m_Layer = 0;
 
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public int layer
         {
             get
@@ -31,6 +33,7 @@ namespace UnityEngine.XR.WSA
         [SerializeField]
         private PhysicMaterial m_Material;
 
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public PhysicMaterial material
         {
             get
@@ -48,6 +51,7 @@ namespace UnityEngine.XR.WSA
         [SerializeField]
         bool m_EnableCollisions = true;
 
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public bool enableCollisions
         {
             get

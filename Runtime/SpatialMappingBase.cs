@@ -7,7 +7,7 @@ using UnityEngine.Scripting.APIUpdating;
 namespace UnityEngine.XR.WSA
 {
     [MovedFrom("UnityEngine.VR.WSA")]
-
+    [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
     public abstract class SpatialMappingBase : MonoBehaviour
     {
         static readonly float s_MovementUpdateThresholdSqr = 0.0001f;
@@ -15,14 +15,17 @@ namespace UnityEngine.XR.WSA
 
         static int s_ObserverIdCounter = 0;
 
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public delegate void SurfaceDataReadyCallback(SpatialMappingBase requester, SurfaceData bakedData, bool outputWritten, float elapsedBakeTimeSeconds);
 
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public enum VolumeType
         {
             Sphere = 0,
             AxisAlignedBox = 1
         }
 
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public enum LODType
         {
             High = 0,
@@ -30,6 +33,7 @@ namespace UnityEngine.XR.WSA
             Low = 2
         }
 
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public class Surface
         {
             public SurfaceId surfaceId { get; set; }
@@ -47,6 +51,7 @@ namespace UnityEngine.XR.WSA
 
         [SerializeField]
         GameObject m_SurfaceParent;
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public GameObject surfaceParent
         {
             get { return m_SurfaceParent; }
@@ -55,6 +60,7 @@ namespace UnityEngine.XR.WSA
 
         [SerializeField]
         bool m_FreezeUpdates = false;
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public bool freezeUpdates
         {
             get { return m_FreezeUpdates; }
@@ -63,6 +69,7 @@ namespace UnityEngine.XR.WSA
 
         [SerializeField]
         VolumeType m_VolumeType = VolumeType.AxisAlignedBox;
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public VolumeType volumeType
         {
             get { return m_VolumeType; }
@@ -71,6 +78,7 @@ namespace UnityEngine.XR.WSA
 
         [SerializeField]
         float m_SphereRadius = 2.0f;
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public float sphereRadius
         {
             get { return m_SphereRadius; }
@@ -79,6 +87,7 @@ namespace UnityEngine.XR.WSA
 
         [SerializeField]
         Vector3 m_HalfBoxExtents = Vector3.one * 4.0f;
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public Vector3 halfBoxExtents
         {
             get { return m_HalfBoxExtents; }
@@ -87,6 +96,7 @@ namespace UnityEngine.XR.WSA
 
         [SerializeField]
         LODType m_LodType = LODType.Medium;
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public LODType lodType
         {
             get { return m_LodType; }
@@ -95,6 +105,7 @@ namespace UnityEngine.XR.WSA
 
         [SerializeField]
         int m_NumUpdatesBeforeRemoval = 10;
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public int numUpdatesBeforeRemoval
         {
             get { return m_NumUpdatesBeforeRemoval; }
@@ -103,6 +114,7 @@ namespace UnityEngine.XR.WSA
 
         [SerializeField]
         float m_SecondsBetweenUpdates = 2.5f;
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public float secondsBetweenUpdates
         {
             get { return m_SecondsBetweenUpdates; }
@@ -110,6 +122,7 @@ namespace UnityEngine.XR.WSA
         }
 
         protected bool m_BakePhysics = false;
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public bool bakePhysics
         {
             get

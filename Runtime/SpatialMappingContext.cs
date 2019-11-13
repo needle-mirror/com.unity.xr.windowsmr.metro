@@ -11,10 +11,12 @@ using System.Collections.Generic;
 namespace UnityEngine.XR.WSA
 {
     [MovedFrom("UnityEngine.VR.WSA")]
+    [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
     public sealed class SpatialMappingContext
     {
         private static readonly SpatialMappingContext instance = new SpatialMappingContext();
         private SpatialMappingContext() {}
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public static SpatialMappingContext Instance
         {
             get { return instance; }
@@ -29,14 +31,20 @@ namespace UnityEngine.XR.WSA
         // Delegate for retrieving the highest priority surface to bake.  This is
         // called by the context when it's looking for work to add to the bake
         // queue.
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public delegate bool GetHighestPriorityCallback(out SurfaceData dataRequest);
 
         // A record defining a single component.
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         struct SMComponentRecord
         {
+            [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
             public SpatialMappingBase m_Component;  // the component itself
+            [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
             public SpatialMappingBase.SurfaceDataReadyCallback      m_OnDataReady;  // this component's data ready delegate
+            [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
             public GetHighestPriorityCallback   m_GetHighestPri;    // called when work queue isn't full
+            [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
             public SurfaceObserver              m_SurfaceObserver;  // scripting API observer
 
             SMComponentRecord(
@@ -51,6 +59,7 @@ namespace UnityEngine.XR.WSA
                 m_SurfaceObserver = observer;
             }
 
+            [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
             public void Clear()
             {
                 m_Component = null;
@@ -59,6 +68,7 @@ namespace UnityEngine.XR.WSA
                 m_SurfaceObserver = null;
             }
 
+            [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
             public bool IsClear()
             {
                 return m_Component == null
@@ -69,17 +79,22 @@ namespace UnityEngine.XR.WSA
         }
 
         // A record containing information about in-flight bakes.
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         struct SMBakeRequest
         {
+            [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
             public SurfaceData          m_RequestData;
+            [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
             public SMComponentRecord    m_Requester;
 
+            [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
             public void Clear()
             {
                 m_RequestData.id.handle = 0;
                 m_Requester.Clear();
             }
 
+            [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
             public bool IsClear()
             {
                 return (m_RequestData.id.handle == 0 && m_Requester.IsClear());
@@ -96,6 +111,7 @@ namespace UnityEngine.XR.WSA
         // the context prior to their first surface bake request.  This method will
         // throw ArgumentException if this component already exists in the list
         // ArgumentNullException if any of the parameters are missing.
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public void RegisterComponent(SpatialMappingBase smComponent, SpatialMappingBase.SurfaceDataReadyCallback onDataReady, GetHighestPriorityCallback getHighestPri, SurfaceObserver observer)
         {
             if (smComponent == null)
@@ -130,6 +146,7 @@ namespace UnityEngine.XR.WSA
         // Remove the specified component from the list of components.  Argument
         // exceptions will be thrown if the specified component cannot be found
         // in the list.
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public void DeregisterComponent(SpatialMappingBase smComponent)
         {
             int removeCount = m_Components.RemoveAll(record => record.m_Component == smComponent);
@@ -142,6 +159,7 @@ namespace UnityEngine.XR.WSA
         // Delegate called by a SurfaceObserver indicating that a bake request has
         // completed.  This will propagate to some subset of the registered
         // components.
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public void OnSurfaceDataReady(SurfaceData sd, bool outputWritten, float elapsedBakeTimeSeconds)
         {
             int inFlightIdx = GetInFlightIndexFromSD(sd);
@@ -295,6 +313,7 @@ namespace UnityEngine.XR.WSA
 
         // Components should call this when they have new data requests available.
         // This will potentially wake a slumbering context.
+        [System.Obsolete("Support for built-in VR will be removed in Unity 2020.1. Please update to the new Unity XR Plugin System. More information about the new XR Plugin System can be found at https://docs.google.com/document/d/1AMk4NwRVAtnG-LScXT2ne_s5mD4rmWK_C9dyn39ZDbc/edit.", false)]
         public void ComponentHasDataRequests()
         {
             RequestMeshPriorityFromComponents();
