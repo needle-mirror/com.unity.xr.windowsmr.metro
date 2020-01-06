@@ -4,6 +4,19 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.18] - 2020-01-07
+
+Recreate .meta file for UnityRemotingWMR.dll for both UWP x64 and Editor x64 due to .meta file read issue.
+
+## [1.0.17] - 2020-01-06
+
+Fix .meta information for UnityRemotingWMR.dll
+
+## [1.0.16] - 2019-12-12
+
+Update UWP x64 Remoting library to pass Microsoft WACK test.
+Fix issue in remoting library that caused disconnect to enter a bad state.
+
 ## [1.0.15] - 2019-10-25
 
 Update Hololens 2 remoting dlls to support standalone remoting
