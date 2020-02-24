@@ -4,6 +4,15 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [4.2.1] - 2020-02-25
+
+Update Remoting dlls to version 2.0.20
+
+## [4.2.0] - 2020-01-29
+
+Update Microsoft.Holographic.AppRemoting.dll to version 2.0.18
+Update license copyright
+
 ## [4.1.0] - 2019-12-12
 
 Update UWP x64 Remoting library to pass Microsoft WACK test.
@@ -23,7 +32,7 @@ Add support for existing remoting plugins to work with UWP x64 builds when remot
 Update remoting dlls for Hololens 2
 -- Fixes crash when remoting with shared depth buffer enabled
 
-## [3.0.4] - 2019-08-9
+## [3.0.4] - 2019-08-09
 
 Add updated remoting dll for Hololens 2 (new name same functionality)
 
