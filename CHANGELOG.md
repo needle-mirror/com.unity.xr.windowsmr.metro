@@ -4,6 +4,10 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.19] - 2020-02-25
+
+Update remoting plugins to version 2.0.20.
+
 ## [1.0.18] - 2020-01-07
 
 Recreate .meta file for UnityRemotingWMR.dll for both UWP x64 and Editor x64 due to .meta file read issue.
