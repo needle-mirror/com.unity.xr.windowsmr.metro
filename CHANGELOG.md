@@ -4,6 +4,14 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.21] - 2020-05-28
+
+Update remoting plugins to version 2.1.3.
+
+## [1.0.20] - 2020-04-22
+
+Update remoting plugins to version 2.1.2.
+
 ## [1.0.19] - 2020-02-25
 
 Update remoting plugins to version 2.0.20.
